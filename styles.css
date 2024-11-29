@@ -7,13 +7,17 @@
 
 /* Body styles */
 body {
-    background: linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967); /* Vertical gradient from left to right */
+    background: 
+        linear-gradient(135deg, #e8e4e1 10%, #f1e5d4 25%, #e0d9b3 40%, #f0f0e2 60%, #d9d0b7 90%);
+    /* Wavy pearl gradient */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 60px; /* To make room for the fixed header */
+    background-size: 300% 300%; /* Large background for dynamic effect */
+    animation: waveEffect 10s ease-in-out infinite; /* Smooth wave animation */
 }
 
 /* Header styles - making it see-through */
@@ -86,4 +90,17 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: #333;
+}
+
+/* Animation for the wavy effect on background */
+@keyframes waveEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
