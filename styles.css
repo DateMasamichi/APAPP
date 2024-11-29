@@ -103,3 +103,20 @@ header {
         height: 200px;
     }
 }
+/* Style for the Social Media Buttons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Space between cards and social media buttons */
+}
+
+.social-icon {
+    width: 40px;  /* Icon size */
+    height: 40px;
+    margin: 0 10px; /* Space between the icons */
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Grow the icon on hover */
+}
