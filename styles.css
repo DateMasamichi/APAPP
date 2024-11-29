@@ -7,7 +7,7 @@
 
 /* Body styles */
 body {
-    background-color: #f7ef8a; /* Pearly white background */
+    background: linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967); /* Vertical gradient from left to right */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
