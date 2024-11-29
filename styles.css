@@ -1,12 +1,51 @@
-/* Set the background to a pearly white color */
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
 body {
     background-color: #f6e3f9; /* Pearly white background */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    flex-direction: column;
+    margin-top: 60px; /* To make room for the fixed header */
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keeps the header on top */
+}
+
+.header-left {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-right a:hover {
+    color: #007bff;
 }
 
 /* Container for the 3 cards */
@@ -14,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px; /* To avoid overlap with the fixed header */
 }
 
 /* Style for each card with round images */
@@ -22,12 +62,21 @@ body {
     text-align: center;
 }
 
+/* 3D effect for images */
 .image {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Makes the image round */
     object-fit: cover;
     margin-bottom: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect to make the image appear like it's lifted */
+.image:hover {
+    transform: translateY(-10px); /* Lifts the image */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 /* Styling for the text under the image */
