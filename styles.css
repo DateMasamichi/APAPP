@@ -16,7 +16,7 @@ body {
     margin-top: 60px; /* To make room for the fixed header */
 }
 
-/* Header styles */
+/* Header styles - making it see-through */
 header {
     position: fixed;
     top: 0;
@@ -25,17 +25,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fefefe;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow to make header visible */
     z-index: 1000; /* Keeps the header on top */
 }
 
+/* Left part of the header */
 .header-left {
     font-size: 20px;
     font-weight: bold;
 }
 
+/* Links in the right part of the header */
 .header-right a {
     margin-left: 20px;
     text-decoration: none;
