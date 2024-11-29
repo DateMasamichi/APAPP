@@ -103,11 +103,26 @@ header {
         height: 200px;
     }
 }
-/* Style for the Social Media Buttons */
+
+/* Footer styles - semi-transparent */
+footer {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 40px; /* Space above the footer */
+}
+
+/* Social Media Icons */
 .social-media {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* Space between cards and social media buttons */
+    margin-bottom: 20px;
 }
 
 .social-icon {
@@ -119,4 +134,14 @@ header {
 
 .social-icon:hover {
     transform: scale(1.2); /* Grow the icon on hover */
+}
+
+/* Fleur-de-lys Motif */
+.footer-motif {
+    margin-top: 20px;
+}
+
+.fleur-de-lys {
+    width: 50px;  /* Fleur-de-lys size */
+    height: 50px;
 }
