@@ -139,9 +139,11 @@ footer {
 /* Fleur-de-lys Motif */
 .footer-motif {
     margin-top: 20px;
+    text-align: center; /* Center the fleur-de-lys */
 }
 
 .fleur-de-lys {
-    width: 350px;  /* Fleur-de-lys size */
-    height: 50px;
+    width: 100%;  /* Make the width responsive to container size */
+    max-width: 500px;  /* Optional: Limit maximum width */
+    height: auto;  /* Maintain aspect ratio */
 }
