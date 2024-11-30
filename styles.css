@@ -118,23 +118,6 @@ footer {
     margin-top: 40px; /* Space above the footer */
 }
 
-/* Social Media Icons */
-.social-media {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.social-icon {
-    width: 40px;  /* Icon size */
-    height: 40px;
-    margin: 0 10px; /* Space between the icons */
-    transition: transform 0.3s ease; /* Add smooth hover effect */
-}
-
-.social-icon:hover {
-    transform: scale(1.2); /* Grow the icon on hover */
-}
 
 /* Fleur-de-lys Motif */
 .footer-motif {
@@ -146,4 +129,11 @@ footer {
     width: 100%;  /* Make the width responsive to container size */
     max-width: 500px;  /* Optional: Limit maximum width */
     height: auto;  /* Maintain aspect ratio */
+}
+
+.small-fleur-de-lys {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
